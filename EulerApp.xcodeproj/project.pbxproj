@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */; };
+		70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */; };
+		70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8425FAE5D900C1AD80 /* ViewController.swift */; };
+		70F1FE8825FAE5D900C1AD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F1FE8625FAE5D900C1AD80 /* Main.storyboard */; };
+		70F1FE8B25FAE5D900C1AD80 /* EulerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8925FAE5D900C1AD80 /* EulerApp.xcdatamodeld */; };
+		70F1FE8D25FAE5DD00C1AD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F1FE8C25FAE5DD00C1AD80 /* Assets.xcassets */; };
+		70F1FE9025FAE5DD00C1AD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F1FE8E25FAE5DD00C1AD80 /* LaunchScreen.storyboard */; };
+		70F1FE9B25FAE5DD00C1AD80 /* EulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE9A25FAE5DD00C1AD80 /* EulerAppTests.swift */; };
+		70F1FEA625FAE5DD00C1AD80 /* EulerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70F1FE9725FAE5DD00C1AD80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70F1FE7525FAE5D900C1AD80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70F1FE7C25FAE5D900C1AD80;
+			remoteInfo = EulerApp;
+		};
+		70F1FEA225FAE5DD00C1AD80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70F1FE7525FAE5D900C1AD80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70F1FE7C25FAE5D900C1AD80;
+			remoteInfo = EulerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70F1FE7D25FAE5D900C1AD80 /* EulerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EulerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70F1FE8425FAE5D900C1AD80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70F1FE8725FAE5D900C1AD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70F1FE8A25FAE5D900C1AD80 /* EulerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EulerApp.xcdatamodel; sourceTree = "<group>"; };
+		70F1FE8C25FAE5DD00C1AD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70F1FE8F25FAE5DD00C1AD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70F1FE9125FAE5DD00C1AD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F1FE9625FAE5DD00C1AD80 /* EulerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F1FE9A25FAE5DD00C1AD80 /* EulerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerAppTests.swift; sourceTree = "<group>"; };
+		70F1FE9C25FAE5DD00C1AD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F1FEA125FAE5DD00C1AD80 /* EulerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerAppUITests.swift; sourceTree = "<group>"; };
+		70F1FEA725FAE5DD00C1AD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70F1FE7A25FAE5D900C1AD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F1FE9325FAE5DD00C1AD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F1FE9E25FAE5DD00C1AD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70F1FE7425FAE5D900C1AD80 = {
+			isa = PBXGroup;
+			children = (
+				70F1FE7F25FAE5D900C1AD80 /* EulerApp */,
+				70F1FE9925FAE5DD00C1AD80 /* EulerAppTests */,
+				70F1FEA425FAE5DD00C1AD80 /* EulerAppUITests */,
+				70F1FE7E25FAE5D900C1AD80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70F1FE7E25FAE5D900C1AD80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70F1FE7D25FAE5D900C1AD80 /* EulerApp.app */,
+				70F1FE9625FAE5DD00C1AD80 /* EulerAppTests.xctest */,
+				70F1FEA125FAE5DD00C1AD80 /* EulerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70F1FE7F25FAE5D900C1AD80 /* EulerApp */ = {
+			isa = PBXGroup;
+			children = (
+				70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */,
+				70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */,
+				70F1FE8425FAE5D900C1AD80 /* ViewController.swift */,
+				70F1FE8625FAE5D900C1AD80 /* Main.storyboard */,
+				70F1FE8C25FAE5DD00C1AD80 /* Assets.xcassets */,
+				70F1FE8E25FAE5DD00C1AD80 /* LaunchScreen.storyboard */,
+				70F1FE9125FAE5DD00C1AD80 /* Info.plist */,
+				70F1FE8925FAE5D900C1AD80 /* EulerApp.xcdatamodeld */,
+			);
+			path = EulerApp;
+			sourceTree = "<group>";
+		};
+		70F1FE9925FAE5DD00C1AD80 /* EulerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				70F1FE9A25FAE5DD00C1AD80 /* EulerAppTests.swift */,
+				70F1FE9C25FAE5DD00C1AD80 /* Info.plist */,
+			);
+			path = EulerAppTests;
+			sourceTree = "<group>";
+		};
+		70F1FEA425FAE5DD00C1AD80 /* EulerAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */,
+				70F1FEA725FAE5DD00C1AD80 /* Info.plist */,
+			);
+			path = EulerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70F1FE7C25FAE5D900C1AD80 /* EulerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F1FEAA25FAE5DD00C1AD80 /* Build configuration list for PBXNativeTarget "EulerApp" */;
+			buildPhases = (
+				70F1FE7925FAE5D900C1AD80 /* Sources */,
+				70F1FE7A25FAE5D900C1AD80 /* Frameworks */,
+				70F1FE7B25FAE5D900C1AD80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EulerApp;
+			productName = EulerApp;
+			productReference = 70F1FE7D25FAE5D900C1AD80 /* EulerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70F1FE9525FAE5DD00C1AD80 /* EulerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F1FEAD25FAE5DD00C1AD80 /* Build configuration list for PBXNativeTarget "EulerAppTests" */;
+			buildPhases = (
+				70F1FE9225FAE5DD00C1AD80 /* Sources */,
+				70F1FE9325FAE5DD00C1AD80 /* Frameworks */,
+				70F1FE9425FAE5DD00C1AD80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70F1FE9825FAE5DD00C1AD80 /* PBXTargetDependency */,
+			);
+			name = EulerAppTests;
+			productName = EulerAppTests;
+			productReference = 70F1FE9625FAE5DD00C1AD80 /* EulerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70F1FEA025FAE5DD00C1AD80 /* EulerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F1FEB025FAE5DD00C1AD80 /* Build configuration list for PBXNativeTarget "EulerAppUITests" */;
+			buildPhases = (
+				70F1FE9D25FAE5DD00C1AD80 /* Sources */,
+				70F1FE9E25FAE5DD00C1AD80 /* Frameworks */,
+				70F1FE9F25FAE5DD00C1AD80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70F1FEA325FAE5DD00C1AD80 /* PBXTargetDependency */,
+			);
+			name = EulerAppUITests;
+			productName = EulerAppUITests;
+			productReference = 70F1FEA125FAE5DD00C1AD80 /* EulerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70F1FE7525FAE5D900C1AD80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					70F1FE7C25FAE5D900C1AD80 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					70F1FE9525FAE5DD00C1AD80 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 70F1FE7C25FAE5D900C1AD80;
+					};
+					70F1FEA025FAE5DD00C1AD80 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 70F1FE7C25FAE5D900C1AD80;
+					};
+				};
+			};
+			buildConfigurationList = 70F1FE7825FAE5D900C1AD80 /* Build configuration list for PBXProject "EulerApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70F1FE7425FAE5D900C1AD80;
+			productRefGroup = 70F1FE7E25FAE5D900C1AD80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70F1FE7C25FAE5D900C1AD80 /* EulerApp */,
+				70F1FE9525FAE5DD00C1AD80 /* EulerAppTests */,
+				70F1FEA025FAE5DD00C1AD80 /* EulerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70F1FE7B25FAE5D900C1AD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F1FE9025FAE5DD00C1AD80 /* LaunchScreen.storyboard in Resources */,
+				70F1FE8D25FAE5DD00C1AD80 /* Assets.xcassets in Resources */,
+				70F1FE8825FAE5D900C1AD80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F1FE9425FAE5DD00C1AD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F1FE9F25FAE5DD00C1AD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70F1FE7925FAE5D900C1AD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */,
+				70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */,
+				70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */,
+				70F1FE8B25FAE5D900C1AD80 /* EulerApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F1FE9225FAE5DD00C1AD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F1FE9B25FAE5DD00C1AD80 /* EulerAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F1FE9D25FAE5DD00C1AD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F1FEA625FAE5DD00C1AD80 /* EulerAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70F1FE9825FAE5DD00C1AD80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70F1FE7C25FAE5D900C1AD80 /* EulerApp */;
+			targetProxy = 70F1FE9725FAE5DD00C1AD80 /* PBXContainerItemProxy */;
+		};
+		70F1FEA325FAE5DD00C1AD80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70F1FE7C25FAE5D900C1AD80 /* EulerApp */;
+			targetProxy = 70F1FEA225FAE5DD00C1AD80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70F1FE8625FAE5D900C1AD80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70F1FE8725FAE5D900C1AD80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70F1FE8E25FAE5DD00C1AD80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70F1FE8F25FAE5DD00C1AD80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70F1FEA825FAE5DD00C1AD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70F1FEA925FAE5DD00C1AD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70F1FEAB25FAE5DD00C1AD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = EulerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryancornel.makeschool.EulerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70F1FEAC25FAE5DD00C1AD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = EulerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryancornel.makeschool.EulerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70F1FEAE25FAE5DD00C1AD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = EulerAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryancornel.makeschool.EulerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EulerApp.app/EulerApp";
+			};
+			name = Debug;
+		};
+		70F1FEAF25FAE5DD00C1AD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = EulerAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryancornel.makeschool.EulerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EulerApp.app/EulerApp";
+			};
+			name = Release;
+		};
+		70F1FEB125FAE5DD00C1AD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = EulerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryancornel.makeschool.EulerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EulerApp;
+			};
+			name = Debug;
+		};
+		70F1FEB225FAE5DD00C1AD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = EulerAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryancornel.makeschool.EulerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EulerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70F1FE7825FAE5D900C1AD80 /* Build configuration list for PBXProject "EulerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F1FEA825FAE5DD00C1AD80 /* Debug */,
+				70F1FEA925FAE5DD00C1AD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70F1FEAA25FAE5DD00C1AD80 /* Build configuration list for PBXNativeTarget "EulerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F1FEAB25FAE5DD00C1AD80 /* Debug */,
+				70F1FEAC25FAE5DD00C1AD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70F1FEAD25FAE5DD00C1AD80 /* Build configuration list for PBXNativeTarget "EulerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F1FEAE25FAE5DD00C1AD80 /* Debug */,
+				70F1FEAF25FAE5DD00C1AD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70F1FEB025FAE5DD00C1AD80 /* Build configuration list for PBXNativeTarget "EulerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F1FEB125FAE5DD00C1AD80 /* Debug */,
+				70F1FEB225FAE5DD00C1AD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		70F1FE8925FAE5D900C1AD80 /* EulerApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				70F1FE8A25FAE5D900C1AD80 /* EulerApp.xcdatamodel */,
+			);
+			currentVersion = 70F1FE8A25FAE5D900C1AD80 /* EulerApp.xcdatamodel */;
+			path = EulerApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 70F1FE7525FAE5D900C1AD80 /* Project object */;
+}
