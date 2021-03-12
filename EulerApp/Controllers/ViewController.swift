@@ -17,9 +17,9 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "Project Euler"
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
+        label.textColor = UIColor.white
         label.textAlignment = .center
-        label.font = UIFont(name: "Marker Felt", size: 80)
+        label.font = UIFont(name: "Marker Felt", size: 65)
         
         return label
     }()
@@ -29,10 +29,10 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Continue", for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
         button.layer.cornerRadius = 10
         button.layer.masksToBounds = true
-        button.backgroundColor = UIColor(ciColor: .black)
+        button.backgroundColor = UIColor(ciColor: .white)
         
         return button
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .gray
+        self.view.backgroundColor = .black
         setImageView()
         setLabel()
         setButton()
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -40).isActive = true
         appNameLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
         appNameLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        appNameLabel.transform = CGAffineTransform(scaleX: 0, y: 0)
+        appNameLabel.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
 
     }
     
