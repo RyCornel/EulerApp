@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var titleConstraintStart: NSLayoutConstraint!
+    var titleConstraintEnd: NSLayoutConstraint!
+    
     let appNameLabel: UILabel = {
        
         let label = UILabel()
@@ -35,6 +38,11 @@ class ViewController: UIViewController {
         
     }()
     
+    override func viewDidAppear(_ animated: Bool) {
+        titleConstraintStart.isActive = false
+        titleConstraintEnd.isActive = true
+    }
+    
     let mainImage: UIImageView = {
        
         let imageView = UIImageView()
@@ -48,12 +56,29 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        view.backgroundColor = .gray
+        self.view.backgroundColor = .gray
         
         
     }
+    
+    func setImageView() {
+        self.view.addSubview(mainImage)
+        mainImage.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        mainImage.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -20).isActive = true
+        
+    }
+    
+    func setLabel() {
+        
+        self.view.addSubview(appNameLabel)
+        appNameLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -40).isActive = true
+        appNameLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        appNameLabel.transform = CGAffineTransform(scaleX: 0, y: 0)
+
+    }
+    
+    
 
 }
 
