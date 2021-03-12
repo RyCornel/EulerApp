@@ -101,6 +101,7 @@
 			children = (
 				70F1FEC525FAECC600C1AD80 /* Delegates */,
 				70F1FEC125FAECB900C1AD80 /* Controllers */,
+				70F1FED125FB022400C1AD80 /* Models */,
 				70F1FE8C25FAE5DD00C1AD80 /* Assets.xcassets */,
 				70F1FE8E25FAE5DD00C1AD80 /* LaunchScreen.storyboard */,
 				70F1FE9125FAE5DD00C1AD80 /* Info.plist */,
@@ -142,6 +143,14 @@
 				70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		70F1FED125FB022400C1AD80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

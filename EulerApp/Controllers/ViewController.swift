@@ -24,6 +24,18 @@ class ViewController: UIViewController {
         return label
     }()
     
+    let subLabel: UILabel = {
+       
+        let subLabel = UILabel()
+        subLabel.text = "Problem 14"
+        subLabel.translatesAutoresizingMaskIntoConstraints = false
+        subLabel.textColor = UIColor.white
+        subLabel.textAlignment = .center
+        subLabel.font = UIFont(name: "Marker Felt", size: 25)
+        
+        return subLabel
+    }()
+    
     let continueButton: UIButton = {
        
         let button = UIButton()
@@ -63,6 +75,7 @@ class ViewController: UIViewController {
         setLabel()
         setButton()
         
+        
         titleConstraintStart = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.centerYAnchor, constant: 5)
         
         titleConstraintEnd = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: 10)
@@ -80,10 +93,16 @@ class ViewController: UIViewController {
     func setLabel() {
         
         self.view.addSubview(appNameLabel)
-        appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -40).isActive = true
+        appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -80).isActive = true
         appNameLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
         appNameLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         appNameLabel.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        
+        self.view.addSubview(subLabel)
+        subLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -40).isActive = true
+        subLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        subLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        subLabel.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
 
     }
     
@@ -92,7 +111,7 @@ class ViewController: UIViewController {
         self.view.addSubview(continueButton)
         continueButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
         continueButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        continueButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -60).isActive = true
+        continueButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -100).isActive = true
         continueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         continueButton.addTarget(self, action: #selector(showHome), for: .touchUpInside)
         
