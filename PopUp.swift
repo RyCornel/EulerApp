@@ -11,6 +11,7 @@ import UIKit
 
 class PopUp: UIView {
     
+    
     fileprivate let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -93,6 +94,7 @@ class PopUp: UIView {
 //        stack.bottomAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
         stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.5).isActive = true
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
+        
         
         animateIn()
         
