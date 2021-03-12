@@ -42,11 +42,7 @@ class ViewController: UIViewController {
         titleConstraintStart.isActive = false
         titleConstraintEnd.isActive = true
         
-        titleConstraintStart = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.centerYAnchor, constant: 5)
         
-        titleConstraintEnd = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: 10)
-        
-        titleConstraintStart.isActive = true 
     }
     
     let mainImage: UIImageView = {
@@ -67,7 +63,11 @@ class ViewController: UIViewController {
         setLabel()
         setButton()
         
+        titleConstraintStart = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.centerYAnchor, constant: 5)
         
+        titleConstraintEnd = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: 10)
+        
+        titleConstraintStart.isActive = true
     }
     
     func setImageView() {
