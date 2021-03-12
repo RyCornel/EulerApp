@@ -34,6 +34,17 @@ class ViewController: UIViewController {
         return button
         
     }()
+    
+    let mainImage: UIImageView = {
+       
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "euler_portrait")
+        
+        return imageView
+        
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
