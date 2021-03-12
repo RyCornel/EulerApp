@@ -29,10 +29,10 @@ class ViewController: UIViewController {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Continue", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 10
         button.layer.masksToBounds = true
-        button.backgroundColor = UIColor(white: 1.0, alpha: 0.9)
+        button.backgroundColor = UIColor(ciColor: .black)
         
         return button
         
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     let mainImage: UIImageView = {
        
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "euler_portrait")
         
@@ -80,9 +80,9 @@ class ViewController: UIViewController {
     func setLabel() {
         
         self.view.addSubview(appNameLabel)
-        appNameLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -40).isActive = true
         appNameLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        appNameLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         appNameLabel.transform = CGAffineTransform(scaleX: 0, y: 0)
 
     }
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         continueButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
         continueButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         continueButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -60).isActive = true
-        continueButton.heightAnchor.constraint(equalTo: self.view.heightAnchor, constant: 50).isActive = true
+        continueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         continueButton.addTarget(self, action: #selector(showHome), for: .touchUpInside)
         
     }
