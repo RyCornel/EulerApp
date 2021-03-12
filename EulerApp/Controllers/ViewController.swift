@@ -113,13 +113,16 @@ class ViewController: UIViewController {
         continueButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         continueButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -100).isActive = true
         continueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        continueButton.addTarget(self, action: #selector(showHome), for: .touchUpInside)
+        continueButton.addTarget(self, action: #selector(PopUp(_ :)) , for: .touchUpInside)
+        
         
     }
     
-    @objc func showHome() {
+    @objc func PopUp(_ : UIButton) {
         
+        self.view.addSubview(EulerApp.PopUp())
     }
+    
 
 }
 
