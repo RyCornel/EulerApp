@@ -41,6 +41,12 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         titleConstraintStart.isActive = false
         titleConstraintEnd.isActive = true
+        
+        titleConstraintStart = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.centerYAnchor, constant: 5)
+        
+        titleConstraintEnd = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: 10)
+        
+        titleConstraintStart.isActive = true 
     }
     
     let mainImage: UIImageView = {
@@ -57,6 +63,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .gray
+        setImageView()
+        setLabel()
+        setButton()
         
         
     }
@@ -78,7 +87,20 @@ class ViewController: UIViewController {
 
     }
     
+    func setButton() {
+        
+        self.view.addSubview(continueButton)
+        continueButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        continueButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        continueButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -60).isActive = true
+        continueButton.heightAnchor.constraint(equalTo: self.view.heightAnchor, constant: 50).isActive = true
+        continueButton.addTarget(self, action: #selector(showHome), for: .touchUpInside)
+        
+    }
     
+    @objc func showHome() {
+        
+    }
 
 }
 
