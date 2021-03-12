@@ -14,8 +14,10 @@ class PopUp: UIView {
     fileprivate let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.text = "Test"
+        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.text = "Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1."
+        label.numberOfLines = 3
+
         label.textAlignment = .center
 
         return label
@@ -24,8 +26,8 @@ class PopUp: UIView {
     fileprivate let subtitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.text = "Test"
+        label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        label.text = "Lets find out if this is true. Swipe left, and type in any number you'd like."
         label.textAlignment = .center
         label.numberOfLines = 3
         

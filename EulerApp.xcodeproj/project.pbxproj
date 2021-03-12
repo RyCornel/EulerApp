@@ -16,6 +16,7 @@
 		70F1FE9B25FAE5DD00C1AD80 /* EulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE9A25FAE5DD00C1AD80 /* EulerAppTests.swift */; };
 		70F1FEA625FAE5DD00C1AD80 /* EulerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */; };
 		70F1FED625FB58A100C1AD80 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FED525FB58A100C1AD80 /* PopUp.swift */; };
+		70F1FEDE25FB6D4800C1AD80 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FEDD25FB6D4800C1AD80 /* Sequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerAppUITests.swift; sourceTree = "<group>"; };
 		70F1FEA725FAE5DD00C1AD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70F1FED525FB58A100C1AD80 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		70F1FEDD25FB6D4800C1AD80 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				70F1FED525FB58A100C1AD80 /* PopUp.swift */,
+				70F1FEDD25FB6D4800C1AD80 /* Sequence.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -287,6 +290,7 @@
 			files = (
 				70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */,
 				70F1FED625FB58A100C1AD80 /* PopUp.swift in Sources */,
+				70F1FEDE25FB6D4800C1AD80 /* Sequence.swift in Sources */,
 				70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */,
 				70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */,
 				70F1FE8B25FAE5D900C1AD80 /* EulerApp.xcdatamodeld in Sources */,
