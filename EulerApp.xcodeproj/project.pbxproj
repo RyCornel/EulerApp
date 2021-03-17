@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701DD4B12602BEB200A39BFF /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DD4B02602BEB200A39BFF /* TextField.swift */; };
+		701DD4B62602BF4300A39BFF /* CollatzFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DD4B52602BF4300A39BFF /* CollatzFunction.swift */; };
 		70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */; };
 		70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */; };
 		70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8425FAE5D900C1AD80 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701DD4B02602BEB200A39BFF /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		701DD4B52602BF4300A39BFF /* CollatzFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollatzFunction.swift; sourceTree = "<group>"; };
 		70F1FE7D25FAE5D900C1AD80 /* EulerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EulerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			children = (
 				70F1FED525FB58A100C1AD80 /* PopUp.swift */,
 				70F1FEDD25FB6D4800C1AD80 /* SwipeLeftPopUp.swift */,
+				701DD4B02602BEB200A39BFF /* TextField.swift */,
+				701DD4B52602BF4300A39BFF /* CollatzFunction.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -291,9 +297,11 @@
 				70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */,
 				70F1FED625FB58A100C1AD80 /* PopUp.swift in Sources */,
 				70F1FEDE25FB6D4800C1AD80 /* SwipeLeftPopUp.swift in Sources */,
+				701DD4B12602BEB200A39BFF /* TextField.swift in Sources */,
 				70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */,
 				70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */,
 				70F1FE8B25FAE5D900C1AD80 /* EulerApp.xcdatamodeld in Sources */,
+				701DD4B62602BF4300A39BFF /* CollatzFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@ class PopUp: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.text = "Lets find out if this is true. Swipe left, and type in any number you'd like."
+        label.text = "Lets find out if this is true. Swipe right, and type in any number you'd like."
         label.textAlignment = .center
         label.numberOfLines = 3
         
