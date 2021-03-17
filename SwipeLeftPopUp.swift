@@ -10,6 +10,27 @@ import UIKit
 
 class SwipeLeftPopUp: UIView {
     
+    fileprivate let titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.text = "Type any number below."
+        label.numberOfLines = 3
+
+        label.textAlignment = .center
+
+        return label
+    }()
+    
+    fileprivate let textInput: UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        textField.textAlignment = .center
+        
+        return textField
+    }()
+    
 
     fileprivate let container: UIView = {
         let v = UIView()
@@ -21,7 +42,7 @@ class SwipeLeftPopUp: UIView {
     }()
     
     fileprivate lazy var stack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews:  [])
+        let stack = UIStackView(arrangedSubviews:  [titleLabel, textInput])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         
@@ -70,14 +91,6 @@ class SwipeLeftPopUp: UIView {
     
     }
     
-    
-    
-  print (sequence)
-  print ("There are \(sequence.count) indexes in this array.")
-  return
-    
-}
-
 
 }
 
