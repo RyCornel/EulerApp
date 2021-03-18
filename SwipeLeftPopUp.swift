@@ -59,11 +59,11 @@ class SwipeLeftPopUp: UIView {
         container.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45).isActive = true
         
         container.addSubview(stack)
-//        stack.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
+        stack.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
+        stack.bottomAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
         stack.leadingAnchor.constraint(equalTo: container.leadingAnchor).isActive = true
         stack.trailingAnchor.constraint(equalTo: container.trailingAnchor).isActive = true
-//        stack.bottomAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
-        stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.5).isActive = true
+        stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.9).isActive = true
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
     
             
