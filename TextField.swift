@@ -14,10 +14,11 @@ class TextFieldClass: UITextField {
     func setup() {
     
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.frame(forAlignmentRect: CGRect(x: 1, y: 1, width: 100, height: 50))
+        self.frame(forAlignmentRect: CGRect(x: 0, y: 0, width: 200, height: 50))
         self.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         self.textAlignment = .center
-        self.backgroundColor = .blue
+        self.backgroundColor = .darkGray
+        
         
     }
 
@@ -30,6 +31,20 @@ class TextFieldClass: UITextField {
         super.init(coder: aDecoder)
         setup()
     }
+    
+    func numberEntered() -> Any {
+        let rvc = ResultsScrollViewController()
+        let number = 1
+        let error = "Error. Please type a number greater than 0."
+        
+        if (number >= 1) {
+            return CollatzFunction()
+        } else {
+            return error
+        }
+        
+    }
+    
 }
 
 

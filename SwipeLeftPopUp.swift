@@ -22,6 +22,20 @@ class SwipeLeftPopUp: UIView {
         return label
     }()
     
+    fileprivate let button: UIButton = {
+        let button = UIButton(frame: CGRect(x: 0, y: -40, width: 200, height: 50))
+        button.backgroundColor = .black
+        button.setTitle("View Results", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        
+        return button
+    }()
+    
+    @objc private func didTapButton() {
+        
+        
+    }
 
     fileprivate let container: UIView = {
         let v = UIView()
@@ -33,14 +47,13 @@ class SwipeLeftPopUp: UIView {
     }()
     
     fileprivate lazy var stack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews:  [titleLabel, TextFieldClass()])
+        let stack = UIStackView(arrangedSubviews:  [titleLabel, TextFieldClass(), button])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         
         return stack
     }()
     
-
     
     override init(frame: CGRect) {
         super.init(frame: frame)
