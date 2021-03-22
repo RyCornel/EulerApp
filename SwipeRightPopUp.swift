@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SwipeLeftPopUp: UIView {
+class SwipeRightPopUp: UIView, UITextFieldDelegate {
     
     fileprivate let titleLabel: UILabel = {
         let label = UILabel()
@@ -44,18 +44,9 @@ class SwipeLeftPopUp: UIView {
         button.layer.cornerRadius = 10
         button.layer.masksToBounds = true
         button.backgroundColor = UIColor(ciColor: .black)
-        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         return button
     }()
-    
-        @objc private func didTapButton(_ : UITapGestureRecognizer) {
-            print("Button Tapped.")
-            
-            self.view.addSubview(EulerApp.ResultsScrollViewController())
-    
-    
-        }
 
     fileprivate let container: UIView = {
         let v = UIView()
@@ -96,6 +87,7 @@ class SwipeLeftPopUp: UIView {
         continueButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         continueButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100).isActive = true
         continueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        continueButton.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
         
         self.addSubview(textField)
         textField.widthAnchor.constraint(equalToConstant: 250).isActive = true
@@ -103,6 +95,8 @@ class SwipeLeftPopUp: UIView {
         textField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100).isActive = true
         textField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         textField.textAlignment = .center
+        textField.keyboardAppearance = .dark
+        textField.delegate = self
         
         container.addSubview(stack)
         stack.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
@@ -114,6 +108,8 @@ class SwipeLeftPopUp: UIView {
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
         stack.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapButton(_:))))
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -121,6 +117,42 @@ class SwipeLeftPopUp: UIView {
     
     }
     
+    @objc private func didTapButton(_ : UITapGestureRecognizer) -> Any {
+        print("Button Tapped.")
+    
+        print(collatzFunc())
+        return collatzFunc()
+        
+    }
+    
+    
+    func collatzFunc() {
+        var sequence : [Int] = []
+        let randomNum : String = textField.text ?? ""
+        var number : Int = Int(randomNum) ?? 0
+        
+        while number != 1 {
+            
+            if (number % 2 == 0){
+                
+                number = number / 2
+                sequence.append(number)
+                
+            } else {
+                
+                number = 3 * number + 1
+                sequence.append(number)
+                
+            }
+        }
+        
+        print ("There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1]).")
+        print (sequence)
+        
+        return
+        
+    }
 
 }
+
 

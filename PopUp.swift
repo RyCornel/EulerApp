@@ -98,7 +98,7 @@ class PopUp: UIView {
         
         animateIn()
         
-        self.addGestureRecognizer(UISwipeGestureRecognizer(target: self, action: #selector(swipeLeft(_:))))
+        self.addGestureRecognizer(UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(_:))))
         
     }
     
@@ -107,9 +107,9 @@ class PopUp: UIView {
     
     }
     
-    @objc func swipeLeft(_ : UISwipeGestureRecognizer) {
+    @objc func swipeRight(_ : UISwipeGestureRecognizer) {
 
-        self.container.addSubview(EulerApp.SwipeLeftPopUp())
+        self.container.addSubview(EulerApp.SwipeRightPopUp())
     
         }
     

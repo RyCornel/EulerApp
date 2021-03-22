@@ -32,19 +32,18 @@ class TextFieldClass: UITextField {
         setup()
     }
     
-    func numberEntered() -> Any {
-        let number = 1
-        let error = "Error. Please type a number greater than 0."
-        
-        if (number >= 1) {
-            print(CollatzFunction())
-        } else if (number < 1){
-            return error
-        }
-        return CollatzFunction()
-    }
-    
+//    func numberEntered() -> Any {
+//        let number = 1
+//        let error = "Error. Please type a number greater than 0."
+//
+//        if (number >= 1) {
+//            print(CollatzFunction())
+//            CollatzFunction()
+//        } else { return error }
+//        return
+//    }
 }
+
 
 
     
