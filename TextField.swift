@@ -33,16 +33,15 @@ class TextFieldClass: UITextField {
     }
     
     func numberEntered() -> Any {
-        let rvc = ResultsScrollViewController()
         let number = 1
         let error = "Error. Please type a number greater than 0."
         
         if (number >= 1) {
-            return CollatzFunction()
-        } else {
+            print(CollatzFunction())
+        } else if (number < 1){
             return error
         }
-        
+        return CollatzFunction()
     }
     
 }

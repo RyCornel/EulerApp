@@ -22,20 +22,40 @@ class SwipeLeftPopUp: UIView {
         return label
     }()
     
-    fileprivate let button: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: -40, width: 200, height: 50))
-        button.backgroundColor = .black
+    fileprivate let textField: UITextField = {
+        let text = UITextField()
+        text.translatesAutoresizingMaskIntoConstraints = false
+        text.placeholder = "Type Here"
+        text.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        text.layer.cornerRadius = 10
+        text.layer.masksToBounds = true
+        text.textAlignment = .center
+        text.keyboardType = .numberPad
+        text.backgroundColor = .lightGray
+
+        return text
+    }()
+    
+    let continueButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("View Results", for: .normal)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.layer.masksToBounds = true
+        button.backgroundColor = UIColor(ciColor: .black)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         return button
     }()
     
-    @objc private func didTapButton() {
-        
-        
-    }
+        @objc private func didTapButton(_ : UITapGestureRecognizer) {
+            print("Button Tapped.")
+            
+            self.view.addSubview(EulerApp.ResultsScrollViewController())
+    
+    
+        }
 
     fileprivate let container: UIView = {
         let v = UIView()
@@ -47,7 +67,7 @@ class SwipeLeftPopUp: UIView {
     }()
     
     fileprivate lazy var stack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews:  [titleLabel, TextFieldClass(), button])
+        let stack = UIStackView(arrangedSubviews:  [titleLabel, textField, continueButton])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         
@@ -71,15 +91,29 @@ class SwipeLeftPopUp: UIView {
         container.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
         container.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45).isActive = true
         
+        self.addSubview(continueButton)
+        continueButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        continueButton.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        continueButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100).isActive = true
+        continueButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        self.addSubview(textField)
+        textField.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        textField.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        textField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100).isActive = true
+        textField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        textField.textAlignment = .center
+        
         container.addSubview(stack)
         stack.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
         stack.bottomAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
         stack.leadingAnchor.constraint(equalTo: container.leadingAnchor).isActive = true
         stack.trailingAnchor.constraint(equalTo: container.trailingAnchor).isActive = true
-        stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.9).isActive = true
+        stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.8).isActive = true
+        stack.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 1).isActive = true
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
-    
-            
+        stack.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
