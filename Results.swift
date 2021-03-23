@@ -15,7 +15,6 @@ class Results: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        label.text = "Results"
         label.textAlignment = .center
         label.textColor = .white
         label.numberOfLines = 10
@@ -128,7 +127,9 @@ class Results: UIView {
     }
     
     func setsResults(){
-        resultsArrayScrollView.addsubview = UITextView.text = result
+        self.addSubview(resultsArrayScrollView)
+        resultsArrayScrollView
+        resultsLabel.text = result
     }
 
     required init?(coder aDecoder: NSCoder) {
