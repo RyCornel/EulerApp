@@ -65,6 +65,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         return stack
     }()
     
+    
     @objc fileprivate func animateOut() {
         
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -142,14 +143,12 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
     }
     
     @objc func didTapButton(_ : UIButton) {
-        print("Button Tapped.")
-        animateIn()
-        
         print(collatzFunc())
         collatzFunc()
-        
-        _ = Results()
+        animateIn()
+//        _ = Results()
         self.container.addSubview(Results())
+        
         return
     }
     

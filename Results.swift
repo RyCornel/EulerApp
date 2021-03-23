@@ -11,9 +11,7 @@ import UIKit
 
 class Results: UIView {
     
-    let results = SwipeRightPopUp()
-    
-    fileprivate let resultsLabel: UILabel = {
+    public let resultsLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
@@ -33,7 +31,7 @@ class Results: UIView {
         return v
     }()
     
-    fileprivate let resultsArrayScrollView: UIScrollView = {
+    public let resultsArrayScrollView: UIScrollView = {
         let resultsArray = UIScrollView()
         resultsArray.translatesAutoresizingMaskIntoConstraints = false
         resultsArray.backgroundColor = .darkGray
@@ -93,5 +91,6 @@ class Results: UIView {
         fatalError("init(coder:) has not been implemented")
     
     }
+    
 
 }
