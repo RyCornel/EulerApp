@@ -11,12 +11,13 @@ import UIKit
 
 class Results: UIView {
     
+    let results = SwipeRightPopUp()
+    
     fileprivate let resultsLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         label.text = "Test"
-        label.numberOfLines = 3
         label.textAlignment = .center
         label.textColor = .white
 

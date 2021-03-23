@@ -84,6 +84,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
             self.container.transform = .identity
             self.alpha = 1
         })
+    
     }
     
     
@@ -142,14 +143,14 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
     
     @objc func didTapButton(_ : UIButton) {
         print("Button Tapped.")
-//
-//        print(collatzFunc())
-//        return collatzFunc()
-        
         animateIn()
-        let results = Results()
+        
+        print(collatzFunc())
+        collatzFunc()
+        
+        _ = Results()
         self.container.addSubview(Results())
-       
+        return
     }
     
     
@@ -157,30 +158,29 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         var sequence : [Int] = []
         let randomNum : String = textField.text ?? ""
         var number : Int = Int(randomNum) ?? 0
-        
-        
+
+
         while number != 1 {
-            
+
             if (number % 2 == 0){
-                
+
                 number = number / 2
                 sequence.append(number)
-                
+
             } else {
-                
+
                 number = 3 * number + 1
                 sequence.append(number)
-                
+
             }
         }
-        
-        let results : String = "There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1])."
-        
-        print (results)
+
+        let resultsString : String = "There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1])."
+
+        print (resultsString)
         print (sequence)
-        
+
         return
-        
     }
 
 }
