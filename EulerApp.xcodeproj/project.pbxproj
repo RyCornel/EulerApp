@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701DD4B62602BF4300A39BFF /* CollatzFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DD4B52602BF4300A39BFF /* CollatzFunction.swift */; };
+		701DD4C626095D0500A39BFF /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DD4C526095D0500A39BFF /* Results.swift */; };
 		70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */; };
 		70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */; };
 		70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE8425FAE5D900C1AD80 /* ViewController.swift */; };
@@ -16,7 +18,7 @@
 		70F1FE9B25FAE5DD00C1AD80 /* EulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FE9A25FAE5DD00C1AD80 /* EulerAppTests.swift */; };
 		70F1FEA625FAE5DD00C1AD80 /* EulerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */; };
 		70F1FED625FB58A100C1AD80 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FED525FB58A100C1AD80 /* PopUp.swift */; };
-		70F1FEDE25FB6D4800C1AD80 /* SwipeLeftPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FEDD25FB6D4800C1AD80 /* SwipeLeftPopUp.swift */; };
+		70F1FEDE25FB6D4800C1AD80 /* SwipeRightPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1FEDD25FB6D4800C1AD80 /* SwipeRightPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701DD4B52602BF4300A39BFF /* CollatzFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollatzFunction.swift; sourceTree = "<group>"; };
+		701DD4C526095D0500A39BFF /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		70F1FE7D25FAE5D900C1AD80 /* EulerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EulerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F1FE8025FAE5D900C1AD80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70F1FE8225FAE5D900C1AD80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +56,7 @@
 		70F1FEA525FAE5DD00C1AD80 /* EulerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulerAppUITests.swift; sourceTree = "<group>"; };
 		70F1FEA725FAE5DD00C1AD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70F1FED525FB58A100C1AD80 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
-		70F1FEDD25FB6D4800C1AD80 /* SwipeLeftPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeLeftPopUp.swift; sourceTree = "<group>"; };
+		70F1FEDD25FB6D4800C1AD80 /* SwipeRightPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRightPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				70F1FED525FB58A100C1AD80 /* PopUp.swift */,
-				70F1FEDD25FB6D4800C1AD80 /* SwipeLeftPopUp.swift */,
+				70F1FEDD25FB6D4800C1AD80 /* SwipeRightPopUp.swift */,
+				701DD4B52602BF4300A39BFF /* CollatzFunction.swift */,
+				701DD4C526095D0500A39BFF /* Results.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -290,10 +296,12 @@
 			files = (
 				70F1FE8525FAE5D900C1AD80 /* ViewController.swift in Sources */,
 				70F1FED625FB58A100C1AD80 /* PopUp.swift in Sources */,
-				70F1FEDE25FB6D4800C1AD80 /* SwipeLeftPopUp.swift in Sources */,
+				70F1FEDE25FB6D4800C1AD80 /* SwipeRightPopUp.swift in Sources */,
 				70F1FE8125FAE5D900C1AD80 /* AppDelegate.swift in Sources */,
 				70F1FE8325FAE5D900C1AD80 /* SceneDelegate.swift in Sources */,
+				701DD4C626095D0500A39BFF /* Results.swift in Sources */,
 				70F1FE8B25FAE5D900C1AD80 /* EulerApp.xcdatamodeld in Sources */,
+				701DD4B62602BF4300A39BFF /* CollatzFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

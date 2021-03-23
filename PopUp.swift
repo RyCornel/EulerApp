@@ -16,7 +16,7 @@ class PopUp: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        label.text = "Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1."
+        label.text = "Although it has not been proven yet (The Collatz Problem), it is thought that all starting numbers finish at 1."
         label.numberOfLines = 3
 
         label.textAlignment = .center
@@ -28,7 +28,7 @@ class PopUp: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
-        label.text = "Lets find out if this is true. Swipe left, and type in any number you'd like."
+        label.text = "Lets find out if this is true. Swipe right, and type in any number you'd like."
         label.textAlignment = .center
         label.numberOfLines = 3
         
@@ -53,15 +53,6 @@ class PopUp: UIView {
         return stack
     }()
     
-    @objc fileprivate func animateIn() {
-        self.container.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
-        self.alpha = 0
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-            self.container.transform = .identity
-            self.alpha = 1
-        })
-    }
-    
     @objc fileprivate func animateOut() {
         
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -72,6 +63,15 @@ class PopUp: UIView {
                 self.removeFromSuperview()
             }
         }
+    }
+    
+    @objc fileprivate func animateIn() {
+        self.container.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
+        self.alpha = 0
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.container.transform = .identity
+            self.alpha = 1
+        })
     }
     
     override init(frame: CGRect) {
@@ -98,11 +98,19 @@ class PopUp: UIView {
         
         animateIn()
         
+        self.addGestureRecognizer(UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(_:))))
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     
     }
+    
+    @objc func swipeRight(_ : UISwipeGestureRecognizer) {
+
+        self.container.addSubview(EulerApp.SwipeRightPopUp())
+    
+        }
     
 }

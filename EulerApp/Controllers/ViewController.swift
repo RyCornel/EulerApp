@@ -119,10 +119,9 @@ class ViewController: UIViewController {
     }
     
     @objc func PopUp(_ : UIButton) {
-        
-        self.view.addSubview(EulerApp.PopUp())
-    }
-    
 
+        self.view.addSubview(EulerApp.PopUp())
+            
+        }
 }
 
