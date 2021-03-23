@@ -45,6 +45,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         button.layer.masksToBounds = true
         button.backgroundColor = UIColor(ciColor: .black)
         
+        
         return button
     }()
 
@@ -64,6 +65,27 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         
         return stack
     }()
+    
+    @objc fileprivate func animateOut() {
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.container.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
+            self.alpha = 0
+        }) { (complete) in
+            if complete {
+                self.removeFromSuperview()
+            }
+        }
+    }
+    
+    @objc fileprivate func animateIn() {
+        self.container.transform = CGAffineTransform(translationX: 0, y: -self.frame.height)
+        self.alpha = 0
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.container.transform = .identity
+            self.alpha = 1
+        })
+    }
     
     
     override init(frame: CGRect) {
@@ -108,7 +130,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
         stack.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         
-//        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapButton(_:))))
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapButton(_:))))
 //        self.addTarget(self, action: #selector(didTapButton(_ :)), for: .touchUpInside)
         
     }
@@ -121,10 +143,11 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
     @objc func didTapButton(_ : UIButton) {
         print("Button Tapped.")
 //
-        print(collatzFunc())
-        return collatzFunc()
+//        print(collatzFunc())
+//        return collatzFunc()
         
-//        self.container.addSubview(EulerApp.Results())
+        animateIn()
+        self.container.addSubview(Results())
        
     }
     
