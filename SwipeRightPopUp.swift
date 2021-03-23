@@ -108,7 +108,8 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
         stack.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
         
-        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapButton(_:))))
+//        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapButton(_:))))
+//        self.addTarget(self, action: #selector(didTapButton(_ :)), for: .touchUpInside)
         
     }
     
@@ -117,12 +118,14 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
     
     }
     
-    @objc private func didTapButton(_ : UITapGestureRecognizer) -> Any {
+    @objc func didTapButton(_ : UIButton) {
         print("Button Tapped.")
-    
+//
         print(collatzFunc())
         return collatzFunc()
         
+//        self.container.addSubview(EulerApp.Results())
+       
     }
     
     
@@ -130,6 +133,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         var sequence : [Int] = []
         let randomNum : String = textField.text ?? ""
         var number : Int = Int(randomNum) ?? 0
+        
         
         while number != 1 {
             
@@ -146,7 +150,9 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
             }
         }
         
-        print ("There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1]).")
+        let results : String = "There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1])."
+        
+        print (results)
         print (sequence)
         
         return

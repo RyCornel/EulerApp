@@ -11,6 +11,18 @@ import UIKit
 
 class Results: UIView {
     
+    fileprivate let resultsLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.text = "Test"
+        label.numberOfLines = 3
+
+        label.textAlignment = .center
+
+        return label
+    }()
+    
     fileprivate let container: UIView = {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
@@ -56,8 +68,5 @@ class Results: UIView {
         fatalError("init(coder:) has not been implemented")
     
     }
-
-
-
 
 }

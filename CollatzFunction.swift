@@ -32,7 +32,7 @@ func sequence() {
     
     
     print (sequence)
-    print ("There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1]).")
+    print ("There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex ]).")
     return
     
 }
