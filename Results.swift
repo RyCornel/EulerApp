@@ -9,16 +9,15 @@ import Foundation
 import UIKit
 
 
-class Results: UIView {
+class Results: UIView, UIScrollViewDelegate {
     
     public let resultsLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.textAlignment = .center
         label.textColor = .white
-        label.numberOfLines = 10
-
+        label.numberOfLines = 10000
         return label
     }()
     
@@ -35,6 +34,7 @@ class Results: UIView {
         let resultsArray = UIScrollView()
         resultsArray.translatesAutoresizingMaskIntoConstraints = false
         resultsArray.backgroundColor = .black
+        resultsArray.contentSize.height = .infinity
 
         return resultsArray
     }()
@@ -103,6 +103,7 @@ class Results: UIView {
         resultsArrayScrollView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
         resultsArrayScrollView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45).isActive = true
         
+        
 //        self.addSubview(resultsArrayTextView)
 //        resultsArrayTextView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 //        resultsArrayTextView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
@@ -126,10 +127,11 @@ class Results: UIView {
         
     }
     
-    func setsResults(){
+    func setsResults() {
         self.addSubview(resultsArrayScrollView)
-        resultsArrayScrollView
         resultsLabel.text = result
+        
+        
     }
 
     required init?(coder aDecoder: NSCoder) {
