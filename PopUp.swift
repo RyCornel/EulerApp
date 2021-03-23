@@ -16,7 +16,7 @@ class PopUp: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
-        label.text = "Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1."
+        label.text = "Although it has not been proven yet (The Collatz Problem), it is thought that all starting numbers finish at 1."
         label.numberOfLines = 3
 
         label.textAlignment = .center

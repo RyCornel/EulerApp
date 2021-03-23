@@ -26,7 +26,7 @@ class Results: UIView {
     fileprivate let container: UIView = {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
-        v.backgroundColor = .white
+        v.backgroundColor = .black
         v.layer.cornerRadius = 24
         
         return v
