@@ -16,7 +16,6 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         label.text = "Type any number below."
         label.numberOfLines = 3
-
         label.textAlignment = .center
 
         return label
@@ -91,6 +90,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOut)))
         self.backgroundColor = UIColor.gray
         self.frame = UIScreen.main.bounds
         
@@ -147,6 +147,7 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
 //        return collatzFunc()
         
         animateIn()
+        let results = Results()
         self.container.addSubview(Results())
        
     }

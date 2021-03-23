@@ -17,8 +17,8 @@ class Results: UIView {
         label.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         label.text = "Test"
         label.numberOfLines = 3
-
         label.textAlignment = .center
+        label.textColor = .white
 
         return label
     }()
@@ -32,8 +32,16 @@ class Results: UIView {
         return v
     }()
     
+    fileprivate let resultsArrayScrollView: UIScrollView = {
+        let resultsArray = UIScrollView()
+        resultsArray.translatesAutoresizingMaskIntoConstraints = false
+        resultsArray.backgroundColor = .darkGray
+        
+        return resultsArray
+    }()
+    
     fileprivate lazy var stack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews:  [])
+        let stack = UIStackView(arrangedSubviews:  [resultsLabel, resultsArrayScrollView])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         
@@ -56,12 +64,22 @@ class Results: UIView {
         container.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
         container.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45).isActive = true
         
+        self.addSubview(resultsArrayScrollView)
+        resultsArrayScrollView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        resultsArrayScrollView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        resultsArrayScrollView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        resultsArrayScrollView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        resultsArrayScrollView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        resultsArrayScrollView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        resultsArrayScrollView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7).isActive = true
+        resultsArrayScrollView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45).isActive = true
+        
         container.addSubview(stack)
         stack.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
         stack.bottomAnchor.constraint(equalTo: container.bottomAnchor).isActive = true
         stack.leadingAnchor.constraint(equalTo: container.leadingAnchor).isActive = true
         stack.trailingAnchor.constraint(equalTo: container.trailingAnchor).isActive = true
-        stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.8).isActive = true
+        stack.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.95).isActive = true
         stack.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 1).isActive = true
         stack.centerYAnchor.constraint(equalTo: container.centerYAnchor).isActive = true
         stack.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
