@@ -175,7 +175,11 @@ class SwipeRightPopUp: UIView, UITextFieldDelegate {
             }
         }
 
-        let resultsString : String = "There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1]). \(sequence)"
+        let resultsString : String = """
+        There are \(sequence.count) elements in this array. With the last number being \(sequence[sequence.endIndex - 1]).
+
+        \(sequence)
+        """
         return (resultsString, sequence)
     }
 
